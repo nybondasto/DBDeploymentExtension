@@ -206,6 +206,9 @@
     <EmbeddedResource Include="ekaIkkuna.resx">
       <DependentUpon>ekaIkkuna.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VSPackage.resx">
       <MergeWithCTO>true</MergeWithCTO>
       <ManifestResourceName>VSPackage</ManifestResourceName>
