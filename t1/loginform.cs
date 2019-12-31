@@ -43,11 +43,13 @@ namespace t1
                 txtPassword.Text = "";
                 txtUsername.Enabled = false;
                 txtPassword.Enabled = false;
+                isWindowsLogin = true;
             }
             else
             {
                 txtUsername.Enabled = true;
                 txtPassword.Enabled = true;
+                isWindowsLogin = false;
             }
         }
     }
