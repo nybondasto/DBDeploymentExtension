@@ -27,6 +27,8 @@ namespace t1
         public string buildPath = "";
         public string dacpacName = "";
         public string profileName = "";
+        public string connStr = "";
+        public bool windowsLogin = false;
 
 
         private string pubXml = @"<?xml version=""1.0"" encoding=""utf-8""?>" +
@@ -172,10 +174,10 @@ namespace t1
                         string username = login.username;            //values preserved after close
                         string password = login.password;
                         bool winLogin = login.isWindowsLogin;
+                        windowsLogin = winLogin;
 
                         //-- Kirjaudutaan SQL-palvelimeen
-                        string connStr = "";
-
+                        
                         //-- Jos on lokaali SQLExpress-instanssi ja Windows-login
                         if (server == "LOCALHOST" && winLogin)
                             connStr = "Server=.\\SQLEXPRESS;Database=tempdb;Trusted_Connection=Yes";
@@ -260,6 +262,7 @@ namespace t1
                 lblModified.Text = "";
                 lblModified.Visible = false;
                 AddToLog("User logged out successfully");
+                windowsLogin = false;
             }
         }
 
@@ -315,11 +318,18 @@ namespace t1
 
                 string args = "/Action:Publish " +
                               "/SourceFile:" + dacpac + " " +
-                              "/TargetServerName:" + targetServer + " " +
-                              "/TargetUser:" + targetUsername + " " +
-                              "/TargetPassword:" + targetPassword + " " +
-                              "/TargetDatabaseName:" + targetDatabase + " " +
-                              "/Profile:" + tmpXml + " ";
+                              "/TargetServerName:" + targetServer + " ";
+
+                //-- Jos ei ole Windows-login, liitetään mukaan käyttäjätunnus ja salasana
+                if (!windowsLogin)
+                {
+                    args +=  "/TargetUser:" + targetUsername + " " +
+                             "/TargetPassword:" + targetPassword + " ";
+                }
+
+                args += "/TargetDatabaseName:" + targetDatabase + " " +
+                    "/Profile:" + tmpXml + " ";
+                    
 
                 AddToLog("Publishing arguments: " + args);
 
