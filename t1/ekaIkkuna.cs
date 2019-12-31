@@ -256,6 +256,9 @@ namespace t1
                 chkAll.Visible = false;
                 btnSelect.Enabled = false;
                 btnFixChecksum.Enabled = false;
+                btnPublish.Enabled = false;
+                lblModified.Text = "";
+                lblModified.Visible = false;
                 AddToLog("User logged out successfully");
             }
         }
