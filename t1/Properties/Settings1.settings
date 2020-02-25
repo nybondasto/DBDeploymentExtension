@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="servers" Type="System.String" Scope="User">
-      <Value Profile="(Default)">LOCALHOST,S2.LOGISYSTEMS.FI</Value>
+      <Value Profile="(Default)">LOCALHOST</Value>
     </Setting>
   </Settings>
 </SettingsFile>
