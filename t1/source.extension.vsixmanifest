@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="t1.ee06df1f-9a2d-4e27-a50e-4e20c38fa37b" Version="1.0" Language="en-US" Publisher="Tomas Nybondas" />
         <DisplayName>t1</DisplayName>
-        <Description xml:space="preserve">LogiSystems Database Deployment Tool</Description>
+        <Description xml:space="preserve">Database Deployment Tool</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
