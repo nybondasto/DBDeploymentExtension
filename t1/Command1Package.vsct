@@ -56,7 +56,7 @@
         <Parent guid="guidCommand1PackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>LogiSystems Database Deployment Tool</ButtonText>
+          <ButtonText>Database Deployment Tool</ButtonText>
         </Strings>
       </Button>
     </Buttons>
