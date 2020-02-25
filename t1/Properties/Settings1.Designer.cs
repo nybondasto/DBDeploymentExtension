@@ -25,7 +25,7 @@ namespace t1.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("LOCALHOST,S2.LOGISYSTEMS.FI")]
+        [global::System.Configuration.DefaultSettingValueAttribute("LOCALHOST")]
         public string servers {
             get {
                 return ((string)(this["servers"]));
