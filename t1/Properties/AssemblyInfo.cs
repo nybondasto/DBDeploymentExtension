@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LogiSystems Oy Database Deployment Tool")]
+[assembly: AssemblyTitle("Database Deployment Tool")]
 [assembly: AssemblyDescription("Visual Studio Extension for easy databaseproject deployment across multiple databases")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("LogiSystems Oy")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("t1")]
-[assembly: AssemblyCopyright("(C)2019 LogiSystems Oy / Tomas Nybondas")]
+[assembly: AssemblyCopyright("(C)2019 Tomas Nybondas")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
